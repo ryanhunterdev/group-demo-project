@@ -1,6 +1,12 @@
 const express = require('express')
 const app = express()
 const port = 4567
+const { Pool } = require('pg')
+
+pool = new Pool({
+  database: 'group_project_test',
+  password: 'test',
+})
 
 app.get('/', (req, res) => res.send('hello world'))
 
