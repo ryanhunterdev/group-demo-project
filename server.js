@@ -11,5 +11,6 @@ pool = new Pool({
 app.get('/', (req, res) => res.send('hello world'))
 
 app.get('/reset-password', (req, res) => res.send('reset password'))
+console.log("Ryan's change");
 
 app.listen(port, () => console.log(`listening on port: ${port}`))
